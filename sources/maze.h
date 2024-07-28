@@ -26,6 +26,8 @@ Maze* create_maze(int width, int height);
 
 void randomize_maze(Maze* maze, int iterations);
 
-void draw_maze(Maze* maze);
+void draw_maze(Maze* maze, int size);
+
+void free_maze(Maze* maze);
 
 #endif
