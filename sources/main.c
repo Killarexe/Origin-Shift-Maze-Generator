@@ -12,7 +12,7 @@ int main() {
   while (!WindowShouldClose()) {
     BeginDrawing();
     ClearBackground(BLACK);
-    draw_maze(maze, 8);
+    draw_maze(maze, WINDOW_WIDTH / 16);
     EndDrawing();
   }
   free_maze(maze);
