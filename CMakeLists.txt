@@ -12,7 +12,7 @@ set(GRAPHICS GRAPHICS_API_OPENGL_21)        # set raylib to OpenGL 2.1
 FetchContent_Declare(
     raylib
     GIT_REPOSITORY "https://github.com/raysan5/raylib.git"
-    GIT_TAG "master"
+    GIT_TAG "5.0"
     GIT_PROGRESS TRUE
 )
 

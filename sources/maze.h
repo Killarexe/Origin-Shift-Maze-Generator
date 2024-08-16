@@ -28,6 +28,8 @@ typedef struct Maze {
 
 Maze* create_maze(int width, int height);
 
+void init_maze(Maze* maze);
+
 void randomize_maze(Maze* maze, int iterations);
 
 void draw_maze(Maze* maze, int size);
