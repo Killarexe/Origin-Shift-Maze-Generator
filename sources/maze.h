@@ -15,20 +15,21 @@
  * Exemple: 0b1010 This is a cell width the direction Left and Up.
  */
 
-#define IS_LEFT(x) x & 0x8 == 1
-#define IS_RIGHT(x) x & 0x4 == 1
-#define IS_UP(x) x & 0x2 == 1
-#define IS_DOWN(x) x & 0x1 == 1
+#define IS_LEFT(x) (x & 0x8) == 8
+#define IS_RIGHT(x) (x & 0x4) == 4
+#define IS_UP(x) (x & 0x2) == 2
+#define IS_DOWN(x) (x & 0x1) == 1
 
 typedef struct Maze {
   int* maze_data;
   int width;
   int height;
+  int origin_index;
 } Maze;
 
 Maze* create_maze(int width, int height);
 
-void init_maze(Maze* maze);
+void move_origin(Maze* maze, int direction);
 
 void randomize_maze(Maze* maze, int iterations);
 
